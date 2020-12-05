@@ -6,9 +6,11 @@ import (
 )
 
 func main() {
-	if len(os.Args) > 1 {
-		fmt.Println(os.Args[1])
+	args := os.Args //type inference
+	if len(args) > 1 {
+		fmt.Println(args[1])
 	} else {
-		fmt.Println("Hello World")
+		var message string = "Hello World" //manual type decalration
+		fmt.Println(message)
 	}
 }
