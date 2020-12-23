@@ -1,5 +1,15 @@
 # Getting started with Golang
 
+## Pointers
+
+* Pointer type use an asterisk (*) as a prefix
+  * *int - a pointer to an integer
+* Use the address-of (&) operator to get the memory address of a variable
+* Deferencing the address type by preceding with an asterisk (*)
+* Complex types (e.g., Struct) are automatically dereferenced  
+* All assignment operations in Go are copy operations
+* Slices and maps contain internal pointers, so copies point to the same underlying data
+
 ## Defer
 
 * Used to delay execution of a statement until function ends
