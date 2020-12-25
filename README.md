@@ -49,3 +49,16 @@
   * When creating goroutine, know how it will end - Avoid subtle memory leaks
   * Check for race conditions at compile time
   > go run -race filePath\fileName.go
+
+## Channels
+
+* Channels are the pipes that connect concurrent goroutines. You can send values into channels from one goroutine and receive those values into another goroutine.
+* Create channel using `make` statement:
+  * unbounded: `make(chan int)`
+  * bounded: `make(chan int, 2)`
+* Send message into channel: `ch <- message`
+* Receive message from channel: `message := <-ch`
+* Can have multiple senders and receivers
+* By default, channels are bidirectionsl, but we can restrict the data as like below:
+  * Send only: `chan <- int`
+  * Receive only: `<-chan int`
