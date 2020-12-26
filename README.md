@@ -1,5 +1,28 @@
 # Getting started with GoLang
 
+Go is an open-source programming language created by Google in 2007. It makes it easy to build simple, efficient programs.
+
+Go is a great language choice for writing lower-level programs that provide services to other systems. This type of programming is called system programming.
+
+## Hello World
+
+* All runnable Go programs must have a `main package` and one `main` function
+* `imports` definition should go after `package` declaration. For example, to print something on a console, we need to import `fmt` package, to access `Println()` function
+* `go run` command helps to build and run programs
+* `go build` command helps to build and create an executable file
+
+## Types and Command Line Arguments
+
+* In Go, we can declare variables in two ways:
+  * Type inference - data type is inferred during assignment  
+  &lt;`variable-name`&gt; `:=` &lt;`some-value`&gt;
+  * Manual type declaration - data type is declared prior to assignment
+   `var` &lt;`variable-name`&gt; &lt;`data-type`&gt; `=` &lt;`some-value`&gt;  
+   Static typing allows the Go compiler to check for type errors before the program is run.
+
+* The `os.Args` is an array with the program arguments, starting with the name of executable and followed by any user-supplied arguments from the command line
+* `os.Args[0]` always returns the program executable file path
+
 ## Pointers
 
 * Pointer type use an asterisk (*) as a prefix
