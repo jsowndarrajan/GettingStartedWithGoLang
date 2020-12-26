@@ -16,7 +16,7 @@ Go is a great language choice for writing lower-level programs that provide serv
 * In Go, we can declare variables in two ways:
   * Type inference - data type is inferred during assignment  
   &lt;`variable-name`&gt; `:=` &lt;`some-value`&gt;
-  * Manual type declaration - data type is declared prior to assignment
+  * Manual type declaration - data type is declared prior to assignment  
    `var` &lt;`variable-name`&gt; &lt;`data-type`&gt; `=` &lt;`some-value`&gt;  
    Static typing allows the Go compiler to check for type errors before the program is run.
 
