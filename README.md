@@ -23,6 +23,36 @@ Go is a great language choice for writing lower-level programs that provide serv
 * The `os.Args` is an array with the program arguments, starting with the name of executable and followed by any user-supplied arguments from the command line
 * `os.Args[0]` always returns the program executable file path
 
+## Functions
+
+* Named functions in Go must have a name, followed by any arguments they expect, and end with the data type they return (if any).
+
+```
+
+//function signature
+function <function_name> (arguments) <return_type> {
+  ...
+}
+
+Examples:
+
+//main function - without any arguments and return type
+func main() {
+  ...
+}
+
+//function with argument and return type
+func Greetings(hour int) string {
+ ...
+}
+
+//function with multiple arguments and multiple return types
+func Greetings(hour int, country string) (string, error) {
+ ...
+}
+
+```
+
 ## Pointers
 
 * Pointer type use an asterisk (*) as a prefix
